@@ -1,7 +1,3 @@
-/* ===========================
-     GENEL / BASE (navbar,
-     hero, about ortak kullanıyor)
-=========================== */
 
 body {
   background: var(--background);
@@ -14,9 +10,7 @@ section {
   padding: 100px 0;
 }
 
-/* ===========================
-            HERO
-=========================== */
+
 
 .hero {
   min-height: 100vh;
@@ -110,9 +104,6 @@ section {
   transform: translateY(-4px);
 }
 
-/* ===========================
-      HERO PREVIEW
-=========================== */
 
 .hero_preview {
   position: relative;
@@ -186,10 +177,6 @@ section {
   gap: .6rem;
 }
 
-/* ===========================
-        SCROLL ICON
-=========================== */
-
 .scroll_down {
   margin-top: 3rem;
   text-align: center;
@@ -213,9 +200,6 @@ section {
   }
 }
 
-/* ===========================
-        RESPONSIVE
-=========================== */
 
 @media (max-width: 1200px) {
 

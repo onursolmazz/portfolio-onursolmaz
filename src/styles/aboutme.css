@@ -1,5 +1,5 @@
 .about{
-    padding:120px 0;
+    padding:40px 0;
 }
 
 .about_container{
@@ -8,10 +8,6 @@
     gap:5rem;
     align-items:start;
 }
-
-/* ===========================
-        SOL TARAF
-=========================== */
 
 .about_left{
     display:flex;
@@ -55,10 +51,6 @@
     margin-top:10px;
 }
 
-/* ===========================
-        SAĞ TARAF (KARTLAR)
-=========================== */
-
 .about_right{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -98,10 +90,6 @@
     margin-bottom:14px;
     color:#c8c8c8;
 }
-
-/* ===========================
-        RESPONSIVE
-=========================== */
 
 @media (max-width: 1200px) {
 

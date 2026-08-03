@@ -32,10 +32,6 @@ img {
   display: block;
 }
 
-/* ===========================
-   Button
-=========================== */
-
 .btn {
   display: inline-flex;
   align-items: center;
