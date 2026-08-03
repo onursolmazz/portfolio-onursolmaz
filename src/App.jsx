@@ -1,10 +1,31 @@
+import Navbar from "./components/Navbar";
+import About from "./sections/About";
+import Hero from "./sections/Hero";
 
 function App() {
 
   return (
-   <div className="container py-5">
-      <h1 className="text-primary">Bootstrap çalışıyor 🚀</h1>
-    </div>
+   <>
+   <Navbar />
+   <main>
+    <Hero/>
+    <About/>
+   </main>
+  {/* <SEO />
+
+  <Navbar />
+
+  <main>
+    <Hero />
+    <About />
+    <Skills />
+    <Projects />
+    <Experience />
+    <Contact />
+  </main>
+
+  <Footer /> */}
+</>
   )
 }
 

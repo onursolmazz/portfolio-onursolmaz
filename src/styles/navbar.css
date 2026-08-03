@@ -1,0 +1,164 @@
+/* ===========================
+          NAVBAR
+=========================== */
+
+.navbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 999;
+  background: transparent;
+  transition: 0.35s;
+}
+
+.navbar.scrolled {
+  background: rgba(15, 15, 20, 0.75);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.navbar_container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  transition: .3s;
+}
+
+.navbar_logo:hover {
+  color: var(--primary);
+}
+
+.navbar_menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar_menu li {
+  list-style: none;
+  margin: 0;
+}
+
+.navbar_menu a {
+  position: relative;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: .3s;
+}
+
+.navbar_menu a:hover {
+  color: var(--text);
+}
+
+.navbar_menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: .3s;
+}
+
+.navbar_menu a:hover::after {
+  width: 100%;
+}
+
+.menu_button{
+    display:none;
+    border:none;
+    background:none;
+    color:var(--text);
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.navbar_actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.theme_toggle {
+  border: none;
+  background: none;
+  color: var(--text);
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+}
+
+.theme_toggle:hover {
+  color: var(--primary);
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+  .menu_button{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .navbar_menu{
+        position:fixed;
+        top:80px;
+        right:-300px;
+        width:280px;
+        max-width:80vw;
+        height:calc(100vh - 80px);
+        box-sizing:border-box;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+
+        padding:2rem;
+
+        gap:2rem;
+
+        background:#111;
+        overflow-y:auto;
+
+        transition:.35s;
+    }
+
+    .navbar_menu.active{
+        right:0;
+    }
+
+}
+
+@media (max-width:576px){
+
+  .navbar_logo{
+    font-size:1.2rem;
+  }
+
+  .navbar_actions{
+    gap:.5rem;
+  }
+
+}

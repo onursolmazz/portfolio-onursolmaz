@@ -1,3 +1,6 @@
 {
-"home": "Ana Sayfa"
+  "home": "Ana Sayfa",
+  "about": "Hakkımda",
+  "projects": "Projeler",
+  "contact": "İletişim"
 }
