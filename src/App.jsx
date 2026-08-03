@@ -17,6 +17,7 @@ import Contact from "./sections/Contact";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import { useSelector } from "react-redux";
+import Loader from "./components/Loader.jsx";
 
 function Home() {
   const mode = useSelector((state) => state.theme.mode);
@@ -24,7 +25,7 @@ function Home() {
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", mode);
   }, [mode]);
-  
+
   return (
     <>
       <SEO
@@ -50,14 +51,37 @@ function Home() {
 
 function App() {
   const [, setLanguageVersion] = useState(0);
+  const [offline, setOffline] = useState(!navigator.onLine);
 
   useEffect(() => {
     const unsubscribe = subscribeLanguage(() => {
       setLanguageVersion((v) => v + 1);
     });
 
-    return unsubscribe;
+    const handleOnline = () => {
+      setOffline(false);
+    };
+
+    const handleOffline = () => {
+      setOffline(true);
+    };
+
+    window.addEventListener("online", handleOnline);
+
+    window.addEventListener("offline", handleOffline);
+
+    return () => {
+      unsubscribe();
+
+      window.removeEventListener("online", handleOnline);
+
+      window.removeEventListener("offline", handleOffline);
+    };
   }, []);
+
+  if (offline) {
+    return <Loader />;
+  }
 
   return (
     <BrowserRouter>

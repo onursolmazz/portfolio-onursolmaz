@@ -1,161 +1,282 @@
 .about {
-    padding: 40px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
 }
 
 .about_container {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 5rem;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5rem;
+  align-items: start;
 }
 
 .about_left {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .section_badge {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
 
-    padding: 8px 16px;
-    margin-bottom: 1rem;
+  padding: 8px 16px;
+  margin-bottom: 1rem;
 
-    border: 1px solid var(--accent-border);
-    border-radius: 999px;
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
 
-    background: var(--accent-bg);
-    color: var(--accent);
+  background: var(--accent-bg);
+  color: var(--accent);
 
-    font-size: .8rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .about h2 {
-    font-size: 4rem;
-    margin: 20px 0 40px;
-    color: var(--text);
+  font-size: 4rem;
+  margin: 20px 0 40px;
+  color: var(--text);
 }
 
 .about p {
-    color: var(--text-secondary);
-    line-height: 2;
-    margin-bottom: 30px;
+  color: var(--text-secondary);
+  line-height: 2;
+  margin-bottom: 30px;
 }
 
 .about_quote {
-    color: var(--accent);
-    font-size: 1.6rem;
-    font-style: italic;
-    margin-top: 10px;
+  color: var(--accent);
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-top: 10px;
 }
 
 .about_right {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
 .about_card {
-    padding: 35px;
+  padding: 35px;
 
-    background: var(--card);
+  background: var(--card);
 
-    border: 2px dashed var(--border);
-    border-radius: 28px;
+  border: 2px dashed var(--border);
+  border-radius: 28px;
 
-    transition: var(--transition);
+  transition: var(--transition);
 }
 
 .about_card:hover {
-    transform: translateY(-8px);
-    border-color: var(--accent);
-    box-shadow: 0 20px 40px var(--shadow);
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px var(--shadow);
 }
 
 .about_card h3 {
-    color: var(--accent);
-    margin-bottom: 25px;
-    font-size: 1.6rem;
-    font-style: italic;
+  color: var(--accent);
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  font-style: italic;
 }
 
 .about_card ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about_card li {
-    margin-bottom: 14px;
-    color: var(--text-secondary);
+  margin-bottom: 14px;
+  color: var(--text-secondary);
 }
 
-@media (max-width:1200px) {
-
-    .about h2 {
-        font-size: 3.4rem;
-    }
-
+@media (max-width: 1200px) {
+  .about h2 {
+    font-size: 3.4rem;
+  }
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
+  .about {
+    padding: 80px 0;
+  }
 
-    .about {
-        padding: 80px 0;
-    }
+  .about_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 
-    .about_container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .about h2 {
-        font-size: 3rem;
-        margin: 16px 0 30px;
-    }
-
+  .about h2 {
+    font-size: 3rem;
+    margin: 16px 0 30px;
+  }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+  .about_right {
+    grid-template-columns: 1fr;
+  }
 
-    .about_right {
-        grid-template-columns: 1fr;
-    }
-
-    .about_card {
-        padding: 28px;
-    }
-
+  .about_card {
+    padding: 28px;
+  }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
+  .about h2 {
+    font-size: 2.2rem;
+    margin: 12px 0 24px;
+  }
 
-    .about h2 {
-        font-size: 2.2rem;
-        margin: 12px 0 24px;
-    }
+  .about p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
 
-    .about p {
-        font-size: .95rem;
-        line-height: 1.8;
-    }
+  .about_quote {
+    font-size: 1.3rem;
+  }
 
-    .about_quote {
-        font-size: 1.3rem;
-    }
+  .about_card {
+    padding: 22px;
+    border-radius: 22px;
+  }
 
-    .about_card {
-        padding: 22px;
-        border-radius: 22px;
-    }
+  .about_card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+}
 
-    .about_card h3 {
-        font-size: 1.3rem;
-        margin-bottom: 18px;
-    }
+.loader {
+  position: fixed;
 
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: var(--background);
+
+  z-index: 9999;
+}
+
+.loader_content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 22px;
+}
+
+.loader_spinner {
+  width: 70px;
+  height: 70px;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.loader_spinner::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: 50%;
+
+  border: 3px solid var(--border);
+}
+
+.loader_spinner::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: 50%;
+
+  border: 3px solid transparent;
+
+  border-top-color: var(--primary);
+
+  animation: loaderRotate 1s linear infinite;
+}
+
+.loader_spinner span {
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+
+  animation: loaderPulse 1.2s ease-in-out infinite;
+}
+
+.loader p {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  animation: loaderText 1.5s ease-in-out infinite;
+}
+
+@keyframes loaderRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loaderPulse {
+  0%,
+  100% {
+    transform: scale(0.8);
+
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1);
+
+    opacity: 1;
+  }
+}
+
+@keyframes loaderText {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }

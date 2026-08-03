@@ -1,305 +1,228 @@
 .experience {
-    padding:40px 0;
+  padding: 40px 0;
 }
-
 
 .experience_container h2 {
-    font-size:2.6rem;
-    margin-bottom:60px;
-    color:var(--text);
+  font-size: 2.6rem;
+  margin-bottom: 60px;
+  color: var(--text);
 }
-
 
 .experience_timeline {
-    position:relative;
-    padding-left:50px;
+  position: relative;
+  padding-left: 50px;
 }
-
 
 .experience_timeline::before {
+  content: "";
 
-    content:"";
+  position: absolute;
 
-    position:absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
 
-    left:8px;
-    top:8px;
-    bottom:8px;
-
-    border-left:2px dashed var(--border-light);
+  border-left: 2px dashed var(--border-light);
 }
-
 
 .experience_item {
-
-    position:relative;
-    margin-bottom:56px;
+  position: relative;
+  margin-bottom: 56px;
 }
-
 
 .experience_item:last-child {
-    margin-bottom:0;
+  margin-bottom: 0;
 }
-
 
 .experience_dot {
+  position: absolute;
 
-    position:absolute;
+  left: -50px;
+  top: 6px;
 
-    left:-50px;
-    top:6px;
+  width: 18px;
+  height: 18px;
 
-    width:18px;
-    height:18px;
+  border-radius: 50%;
 
-    border-radius:50%;
+  border: 2px solid var(--accent);
 
-    border:2px solid var(--accent);
-
-    background:var(--background);
+  background: var(--background);
 }
-
 
 .experience_dot::after {
+  content: "";
 
-    content:"";
+  position: absolute;
 
-    position:absolute;
+  inset: 4px;
 
-    inset:4px;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: currentColor;
 
-    background:currentColor;
-
-    opacity:0;
+  opacity: 0;
 }
-
 
 .experience_card_top {
+  display: flex;
 
-    display:flex;
+  align-items: flex-start;
 
-    align-items:flex-start;
+  gap: 16px;
 
-    gap:16px;
-
-    margin-bottom:16px;
+  margin-bottom: 16px;
 }
-
 
 .experience_logo {
+  width: 52px;
+  height: 52px;
 
-    width:52px;
-    height:52px;
+  flex-shrink: 0;
 
-    flex-shrink:0;
+  display: flex;
 
-    display:flex;
+  align-items: center;
 
-    align-items:center;
+  justify-content: center;
 
-    justify-content:center;
+  border: 2px solid var(--accent);
 
+  border-radius: 14px;
 
-    border:2px solid var(--accent);
+  color: var(--accent);
 
-    border-radius:14px;
+  font-weight: 800;
 
+  font-size: 0.95rem;
 
-    color:var(--accent);
-
-    font-weight:800;
-
-    font-size:.95rem;
-
-    letter-spacing:.5px;
+  letter-spacing: 0.5px;
 }
-
 
 .experience_heading {
-
-    flex:1;
+  flex: 1;
 }
-
 
 .experience_heading h3 {
+  font-size: 1.3rem;
 
-    font-size:1.3rem;
+  margin-bottom: 4px;
 
-    margin-bottom:4px;
-
-    color:var(--text);
+  color: var(--text);
 }
-
 
 .experience_company {
+  color: var(--text-secondary);
 
-    color:var(--text-secondary);
-
-    font-size:.92rem;
+  font-size: 0.92rem;
 }
-
 
 .experience_date {
+  color: var(--accent);
 
-    color:var(--accent);
+  font-weight: 600;
 
-    font-weight:600;
+  font-size: 0.92rem;
 
-    font-size:.92rem;
-
-    white-space:nowrap;
+  white-space: nowrap;
 }
-
 
 .experience_card p {
+  color: var(--text-secondary);
 
-    color:var(--text-secondary);
+  line-height: 1.8;
 
-    line-height:1.8;
+  margin-bottom: 20px;
 
-    margin-bottom:20px;
-
-    max-width:760px;
+  max-width: 760px;
 }
-
 
 .experience_tags {
+  display: flex;
 
-    display:flex;
+  flex-wrap: wrap;
 
-    flex-wrap:wrap;
-
-    gap:10px;
+  gap: 10px;
 }
-
 
 .experience_tag {
+  padding: 8px 16px;
 
-    padding:8px 16px;
+  border-radius: 999px;
 
+  border: 1px solid var(--border);
 
-    border-radius:999px;
+  background: var(--surface);
 
-    border:1px solid var(--border);
+  color: var(--text);
 
-    background:var(--surface);
+  font-size: 0.82rem;
 
-
-    color:var(--text);
-
-    font-size:.82rem;
-
-    font-weight:600;
+  font-weight: 600;
 }
 
+@media (max-width: 992px) {
+  .experience {
+    padding: 80px 0;
+  }
 
+  .experience_container h2 {
+    font-size: 2.2rem;
 
-@media (max-width:992px){
+    margin-bottom: 44px;
+  }
 
-    .experience{
-        padding:80px 0;
-    }
+  .experience_timeline {
+    padding-left: 36px;
+  }
 
-
-    .experience_container h2{
-
-        font-size:2.2rem;
-
-        margin-bottom:44px;
-
-    }
-
-
-    .experience_timeline{
-
-        padding-left:36px;
-
-    }
-
-
-    .experience_dot{
-
-        left:-36px;
-
-    }
-
+  .experience_dot {
+    left: -36px;
+  }
 }
 
+@media (max-width: 768px) {
+  .experience_card_top {
+    flex-wrap: wrap;
+  }
 
-
-@media (max-width:768px){
-
-    .experience_card_top{
-
-        flex-wrap:wrap;
-
-    }
-
-
-    .experience_date{
-
-        margin-left:68px;
-
-    }
-
+  .experience_date {
+    margin-left: 68px;
+  }
 }
 
+@media (max-width: 576px) {
+  .experience_container h2 {
+    font-size: 1.8rem;
+  }
 
+  .experience_timeline {
+    padding-left: 28px;
+  }
 
-@media (max-width:576px){
+  .experience_dot {
+    left: -28px;
 
+    width: 14px;
 
-    .experience_container h2{
+    height: 14px;
+  }
 
-        font-size:1.8rem;
+  .experience_logo {
+    width: 44px;
 
-    }
+    height: 44px;
 
+    font-size: 0.8rem;
+  }
 
-    .experience_timeline{
+  .experience_heading h3 {
+    font-size: 1.1rem;
+  }
 
-        padding-left:28px;
+  .experience_date {
+    margin-left: 0;
 
-    }
-
-
-    .experience_dot{
-
-        left:-28px;
-
-        width:14px;
-
-        height:14px;
-
-    }
-
-
-    .experience_logo{
-
-        width:44px;
-
-        height:44px;
-
-        font-size:.8rem;
-
-    }
-
-
-    .experience_heading h3{
-
-        font-size:1.1rem;
-
-    }
-
-
-    .experience_date{
-
-        margin-left:0;
-
-        font-size:.85rem;
-
-    }
-
+    font-size: 0.85rem;
+  }
 }

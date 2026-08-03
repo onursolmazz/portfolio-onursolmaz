@@ -1,4 +1,3 @@
-
 .privacy {
   max-width: 850px;
   margin: 0 auto;
@@ -8,26 +7,26 @@
 .privacy_back {
   display: inline-flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
   color: var(--primary);
   font-weight: 600;
-  transition: .3s;
+  transition: 0.3s;
   margin-bottom: 2rem;
 }
 
 .privacy_back:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .privacy h1 {
   font-size: clamp(2.2rem, 5vw, 3rem);
   color: var(--text);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .privacy_updated {
   color: var(--text-secondary);
-  font-size: .95rem;
+  font-size: 0.95rem;
   margin-bottom: 2.5rem;
 }
 
@@ -50,9 +49,9 @@
   content: "";
   position: absolute;
   left: 0;
-  top: .2rem;
+  top: 0.2rem;
   width: 4px;
-  height: calc(100% - .4rem);
+  height: calc(100% - 0.4rem);
   background: var(--primary);
   border-radius: 20px;
 }
