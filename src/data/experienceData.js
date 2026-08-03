@@ -1,4 +1,4 @@
-const experienceData = [
+export const experienceData = [
   {
     id: 1,
     role: "experience_role_1",
@@ -34,4 +34,14 @@ const experienceData = [
   },
 ];
 
-export default experienceData;
+export const educationData = [
+  {
+    id: 1,
+    degree: "education_data1",
+    school: "Selçuk University",
+    location: "Konya, Türkiye",
+    period: "2021 — 2025",
+    gpa: "GANO: 2.84",
+  },
+];
+

@@ -17,13 +17,13 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container footer_container">
-        <h3>Onur Solmaz</h3>
+        <h3>.</h3>
 
         <p>{_("footer_description")}</p>
 
         <div className="footer_socials">
           <a
-            href="https://github.com/onursolmaz"
+            href="https://github.com/onursolmazz"
             target="_blank"
             rel="noreferrer"
           >
@@ -31,14 +31,14 @@ function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/..."
+            href="https://www.linkedin.com/in/onur-solmaz-907971243/"
             target="_blank"
             rel="noreferrer"
           >
             <FaLinkedin />
           </a>
 
-          <a href="mailto:onur@example.com">
+          <a href="mailto:onursolmazzz2003@gmail.com">
             <FaEnvelope />
           </a>
         </div>

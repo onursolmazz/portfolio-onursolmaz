@@ -1,6 +1,14 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
-
-import { HiOutlineDownload } from "react-icons/hi";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaArrowDown,
+  FaTicketAlt,
+  FaBook,
+  FaShoppingCart,
+  FaChartBar,
+  FaRobot,
+} from "react-icons/fa";
 import { TbBriefcase2 } from "react-icons/tb";
 import { TypeAnimation } from "react-type-animation";
 import { _ } from "../languages/i18n";
@@ -20,22 +28,18 @@ function Hero() {
 
           <TypeAnimation
             sequence={[
+              "Software Engineer",
+              2000,
               "React Developer",
               2000,
-              "Laravel Developer",
-              2000,
-              "Backend Developer",
-              2000,
-              "Computer Engineer",
+              "FullStack Developer",
               2000,
             ]}
             wrapper="h2"
             repeat={Infinity}
           />
 
-          <p>
-            {_("hero_description")}
-          </p>
+          <p>{_("hero_description")}</p>
 
           <div className="hero_buttons">
             <a href="#projects" className="btn btn-primary">
@@ -43,22 +47,30 @@ function Hero() {
               {_("view_projects")}
             </a>
 
-            <a href="/cv.pdf" className="btn btn-secondary">
+            {/* <a href="/cv.pdf" className="btn btn-secondary">
               <HiOutlineDownload />
               {_("download_cv")}
-            </a>
+            </a> */}
           </div>
 
           <div className="hero_socials">
-            <a href="">
+            <a
+              href="https://github.com/onursolmazz"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
 
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/onur-solmaz-907971243/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </a>
 
-            <a href="mailto:mail@mail.com">
+            <a href="mailto:onursolmazzz2003@mail.com">
               <FaEnvelope />
             </a>
           </div>
@@ -69,21 +81,54 @@ function Hero() {
 
           <div className="preview_card">
             <div className="preview_icons">
-              <div className="icon">🎟️</div>
-              <div className="icon">📚</div>
-              <div className="icon">🛒</div>
-              <div className="icon">📊</div>
-              <div className="icon">🤖</div>
+              <div className="icon">
+                <FaTicketAlt />
+              </div>
+
+              <div className="icon">
+                <FaBook />
+              </div>
+
+              <div className="icon">
+                <FaShoppingCart />
+              </div>
+
+              <div className="icon">
+                <FaChartBar />
+              </div>
+
+              <div className="icon">
+                <FaRobot />
+              </div>
             </div>
 
             <h3>{_("featured_projects")}</h3>
 
             <ul className="preview_list">
-              <li>🎟️ {_("project_vidipass")}</li>
-              <li>📚 {_("project_library")}</li>
-              <li>🛒 {_("project_ecommerce")}</li>
-              <li>📊 {_("project_dashboard")}</li>
-              <li>💬 {_("project_chat")}</li>
+              <li>
+                <FaTicketAlt />
+                {_("project_vidipass")}
+              </li>
+
+              <li>
+                <FaBook />
+                {_("project_library")}
+              </li>
+
+              <li>
+                <FaShoppingCart />
+                {_("project_ecommerce")}
+              </li>
+
+              <li>
+                <FaChartBar />
+                {_("project_dashboard")}
+              </li>
+
+              <li>
+                <FaRobot />
+                {_("project_chat")}
+              </li>
             </ul>
           </div>
         </div>

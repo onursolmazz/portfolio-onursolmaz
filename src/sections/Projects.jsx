@@ -76,7 +76,7 @@ function Projects() {
                     {project.technologies.slice(0, 2).join(" · ")}
                   </span>
 
-                  {project.github && (
+                  {/* {project.github && (
                     <a
                       href={project.github}
                       target="_blank"
@@ -85,7 +85,7 @@ function Projects() {
                     >
                       GitHub ↗
                     </a>
-                  )}
+                  )} */}
                 </div>
               </motion.div>
             );

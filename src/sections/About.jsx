@@ -14,7 +14,6 @@ function About() {
             <p key={index}>{_(text)}</p>
           ))}
 
-          <h3 className="about_quote">{_(aboutData.quote)}</h3>
         </div>
 
         <div className="about_right">

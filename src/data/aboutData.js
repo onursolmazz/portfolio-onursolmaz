@@ -2,13 +2,7 @@ const aboutData = {
   badge: "about_badge",
   title: "about",
 
-  description: [
-    "about_description_1",
-    "about_description_2",
-    "about_description_3",
-  ],
-
-  quote: "about_quote",
+  description: ["about_description_1", "about_description_2"],
 
   cards: [
     {
@@ -24,12 +18,12 @@ const aboutData = {
     {
       id: 3,
       title: "tools",
-      items: ["Git", "Docker", "VS Code", "Postman"],
+      items: ["Git", "Docker", "VS Code", "Postman", "Redis"],
     },
     {
       id: 4,
-      title: "learning",
-      items: ["Node.js", "Express.js", "Redis", "CI/CD"],
+      title: "Mobile",
+      items: ["Kotlin", "React Native", "Flutter", "Swift"],
     },
   ],
 };
