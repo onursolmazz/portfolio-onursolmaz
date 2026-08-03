@@ -6,13 +6,7 @@ export const experienceData = [
     location: "Ankara, Türkiye",
     period: "experience_period_1",
     description: "experience_description_1",
-    technologies: [
-      "JavaScript",
-      "React",
-      "HTML & CSS",
-      "REST API",
-      "Git",
-    ],
+    technologies: ["JavaScript", "React", "HTML & CSS", "REST API", "Git"],
   },
 
   {
@@ -40,8 +34,7 @@ export const educationData = [
     degree: "education_data1",
     school: "Selçuk University",
     location: "Konya, Türkiye",
-    period: "2021 — 2025",
+    period: "2021 — 2026",
     gpa: "GANO: 2.84",
   },
 ];
-
