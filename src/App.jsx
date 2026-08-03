@@ -16,8 +16,15 @@ import Contact from "./sections/Contact";
 
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
+import { useSelector } from "react-redux";
 
 function Home() {
+  const mode = useSelector((state) => state.theme.mode);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", mode);
+  }, [mode]);
+  
   return (
     <>
       <SEO
