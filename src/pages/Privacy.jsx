@@ -8,8 +8,6 @@ function Privacy() {
 
       <h1>{_("privacy_title")}</h1>
 
-      <p>{_("privacy_last_updated")}</p>
-
       <p>{_("privacy_intro")}</p>
 
       <h2>{_("privacy_contact_title")}</h2>

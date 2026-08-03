@@ -1,158 +1,161 @@
-.about{
-    padding:40px 0;
+.about {
+    padding: 40px 0;
 }
 
-.about_container{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:5rem;
-    align-items:start;
+.about_container {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 5rem;
+    align-items: start;
 }
 
-.about_left{
-    display:flex;
-    flex-direction:column;
+.about_left {
+    display: flex;
+    flex-direction: column;
 }
 
-.section_badge{
-    display:inline-flex;
-    align-items:center;
-    width:fit-content;
-    padding:8px 16px;
-    margin-bottom:1rem;
+.section_badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
 
-    border:1px solid rgba(245,194,67,.45);
-    border-radius:999px;
+    padding: 8px 16px;
+    margin-bottom: 1rem;
 
-    background:rgba(245,194,67,.08);
-    color:#f5c243;
+    border: 1px solid var(--accent-border);
+    border-radius: 999px;
 
-    font-size:.8rem;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
+    background: var(--accent-bg);
+    color: var(--accent);
+
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-.about h2{
-    font-size:4rem;
-    margin:20px 0 40px;
+.about h2 {
+    font-size: 4rem;
+    margin: 20px 0 40px;
+    color: var(--text);
 }
 
-.about p{
-    color:#b8b8b8;
-    line-height:2;
-    margin-bottom:30px;
+.about p {
+    color: var(--text-secondary);
+    line-height: 2;
+    margin-bottom: 30px;
 }
 
-.about_quote{
-    color:#f5c243;
-    font-size:1.6rem;
-    font-style:italic;
-    margin-top:10px;
+.about_quote {
+    color: var(--accent);
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 10px;
 }
 
-.about_right{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
+.about_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
-.about_card{
-    padding:35px;
+.about_card {
+    padding: 35px;
 
-    border:2px dashed rgba(255,255,255,.35);
-    border-radius:28px;
+    background: var(--card);
 
-    background:#171717;
+    border: 2px dashed var(--border);
+    border-radius: 28px;
 
-    transition:.35s;
+    transition: var(--transition);
 }
 
-.about_card:hover{
-    transform:translateY(-8px);
-    border-color:#f5c243;
+.about_card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px var(--shadow);
 }
 
-.about_card h3{
-    color:#f5c243;
-    margin-bottom:25px;
-    font-size:1.6rem;
-    font-style:italic;
+.about_card h3 {
+    color: var(--accent);
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    font-style: italic;
 }
 
-.about_card ul{
-    list-style:none;
-    margin:0;
-    padding:0;
+.about_card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.about_card li{
-    margin-bottom:14px;
-    color:#c8c8c8;
+.about_card li {
+    margin-bottom: 14px;
+    color: var(--text-secondary);
 }
 
-@media (max-width: 1200px) {
+@media (max-width:1200px) {
 
-  .about h2{
-    font-size:3.4rem;
-  }
-
-}
-
-@media (max-width: 992px) {
-
-  .about{
-    padding:80px 0;
-  }
-
-  .about_container{
-    grid-template-columns:1fr;
-    gap:3rem;
-  }
-
-  .about h2{
-    font-size:3rem;
-    margin:16px 0 30px;
-  }
+    .about h2 {
+        font-size: 3.4rem;
+    }
 
 }
 
-@media (max-width:768px){
+@media (max-width:992px) {
 
-  .about_right{
-    grid-template-columns:1fr;
-  }
+    .about {
+        padding: 80px 0;
+    }
 
-  .about_card{
-    padding:28px;
-  }
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+        margin: 16px 0 30px;
+    }
 
 }
 
-@media (max-width:576px){
+@media (max-width:768px) {
 
-  .about h2{
-    font-size:2.2rem;
-    margin:12px 0 24px;
-  }
+    .about_right {
+        grid-template-columns: 1fr;
+    }
 
-  .about p{
-    font-size:.95rem;
-    line-height:1.8;
-  }
+    .about_card {
+        padding: 28px;
+    }
 
-  .about_quote{
-    font-size:1.3rem;
-  }
+}
 
-  .about_card{
-    padding:22px;
-    border-radius:22px;
-  }
+@media (max-width:576px) {
 
-  .about_card h3{
-    font-size:1.3rem;
-    margin-bottom:18px;
-  }
+    .about h2 {
+        font-size: 2.2rem;
+        margin: 12px 0 24px;
+    }
+
+    .about p {
+        font-size: .95rem;
+        line-height: 1.8;
+    }
+
+    .about_quote {
+        font-size: 1.3rem;
+    }
+
+    .about_card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .about_card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
 
 }

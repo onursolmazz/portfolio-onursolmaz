@@ -35,10 +35,10 @@
   --accent: #f5c243;
   --accent-bg: rgba(245, 194, 67, 0.08);
   --accent-border: rgba(245, 194, 67, 0.45);
-
+  --card-border: rgba(255, 255, 255, 0.25);
   /* Shadow */
   --shadow: rgba(0, 0, 0, 0.45);
-
+  --accent-shadow: rgba(245, 194, 67, 0.18);
   --transition: 0.3s ease;
 }
 
@@ -78,9 +78,9 @@
   --accent: #d97706;
   --accent-bg: rgba(217, 119, 6, 0.08);
   --accent-border: rgba(217, 119, 6, 0.35);
-
+  --card-border: rgba(0, 0, 0, 0.15);
   /* Shadow */
   --shadow: rgba(0, 0, 0, 0.08);
-
+  --accent-shadow: rgba(217, 119, 6, 0.15);
   --transition: 0.3s ease;
 }
