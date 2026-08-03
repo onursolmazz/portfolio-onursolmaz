@@ -108,7 +108,14 @@ function Experience() {
                       {getInitials(item.company)}
                     </div>
                     <div className="experience_heading">
-                      <h3>{_(item.role)}</h3>
+                      <h3>
+                        {item.role.map((role, index) => (
+                          <span key={role}>
+                            {_(role)}
+                            {index !== item.role.length - 1 && " - "}
+                          </span>
+                        ))}
+                      </h3>
 
                       <span className="experience_company">
                         {item.company} · {item.location}

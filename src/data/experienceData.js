@@ -1,7 +1,7 @@
 export const experienceData = [
   {
     id: 1,
-    role: "experience_role_1",
+    role: ["experience_role_1"],
     company: "Ersan Galvaniz",
     location: "Ankara, Türkiye",
     period: "experience_period_1",
@@ -11,7 +11,7 @@ export const experienceData = [
 
   {
     id: 2,
-    role: "experience_role_1",
+    role: ["experience_role_1", "experience_role_2"],
     company: "Kam İnovasyon",
     location: "Ankara, Türkiye",
     period: "experience_period_2",
