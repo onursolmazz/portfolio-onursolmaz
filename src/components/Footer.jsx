@@ -25,6 +25,7 @@ function Footer() {
           <a
             href="https://github.com/onursolmazz"
             target="_blank"
+            aria-label="Github Profile"
             rel="noreferrer"
           >
             <FaGithub />
@@ -33,12 +34,13 @@ function Footer() {
           <a
             href="https://www.linkedin.com/in/onur-solmaz-907971243/"
             target="_blank"
+            aria-label="Linkedin profile"
             rel="noreferrer"
           >
             <FaLinkedin />
           </a>
 
-          <a href="mailto:onursolmazzz2003@gmail.com">
+          <a href="mailto:onursolmazzz2003@gmail.com" aria-label="Mail">
             <FaEnvelope />
           </a>
         </div>
@@ -52,7 +54,7 @@ function Footer() {
 
         <span className="footer_copy">
           © {new Date().getFullYear()} Onur Solmaz.{" "}
-          <Link to="/privacy" className="footer_link">
+          <Link to="/privacy" className="footer_link" aria-label="Privacy page">
             {_("privacy_policy")}
           </Link>
         </span>

@@ -17,7 +17,6 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
 
-
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -85,6 +84,7 @@ function Navbar() {
 
           <button
             className="menu_button"
+            aria-label="Open menu"
             onClick={() => {
               setMenuOpen(!menuOpen);
             }}

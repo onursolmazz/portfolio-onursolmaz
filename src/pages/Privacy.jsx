@@ -4,7 +4,9 @@ import { _ } from "../languages/i18n";
 function Privacy() {
   return (
     <main className="privacy container">
-      <Link to="/">{_("back_to_home")}</Link>
+      <Link to="/" aria-label="Back to home">
+        {_("back_to_home")}
+      </Link>
 
       <h1>{_("privacy_title")}</h1>
 

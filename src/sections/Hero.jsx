@@ -56,6 +56,7 @@ function Hero() {
           <div className="hero_socials">
             <a
               href="https://github.com/onursolmazz"
+              aria-label="Github profile"
               target="_blank"
               rel="noreferrer"
             >
@@ -65,12 +66,13 @@ function Hero() {
             <a
               href="https://www.linkedin.com/in/onur-solmaz-907971243/"
               target="_blank"
+              aria-label="Linkedin profile"
               rel="noreferrer"
             >
               <FaLinkedin />
             </a>
 
-            <a href="mailto:onursolmazzz2003@mail.com">
+            <a href="mailto:onursolmazzz2003@mail.com" aria-label="Mail">
               <FaEnvelope />
             </a>
           </div>

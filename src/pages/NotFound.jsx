@@ -12,7 +12,7 @@ function NotFound() {
         <p>{_("not_found_description")}</p>
 
         <div className="not_found_actions">
-          <Link to="/" className="btn btn-primary">
+          <Link to="/" className="btn btn-primary" aria-label="Back to home">
             {_("back_to_home")}
           </Link>
         </div>
