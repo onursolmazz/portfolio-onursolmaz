@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+
 import {
   SITE_NAME,
   SITE_URL,
@@ -6,7 +7,7 @@ import {
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE,
   DEFAULT_LOCALE,
-} from "../utils/seo";
+} from "../../utils/seo";
 
 function SEO({
   title = DEFAULT_TITLE,

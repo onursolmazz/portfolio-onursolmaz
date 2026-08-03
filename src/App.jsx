@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 
 import { subscribeLanguage } from "./languages/i18n";
 
-import SEO from "./components/SEO/SEO";
-
+import SEO from "./components/SEO/SEO.jsx";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
