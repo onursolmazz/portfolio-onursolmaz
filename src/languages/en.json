@@ -1,10 +1,10 @@
 {
-    "home": "Home Page",
-    "about": "about me",
-    "skills": "Abilities",
+    "home": "Home ",
+    "about": "About me",
+    "skills": "Skills",
     "projects": "Projects",
     "experience": "Experience",
-    "contact": "Communication",
+    "contact": "Contact",
     "hello": "Hello, I'm",
     "hero_description": "I develop scalable, high-performance and user experience-oriented web applications using React, Laravel and modern web technologies. I transform ideas into digital products that are powerful, sustainable and used in the real world.",
     "view_projects": "Check Out My Works",
@@ -51,5 +51,8 @@
     "your_message": "Write your message...",
     "send_message": "Send Message",
     "portfolio_message": "Portfolio Message",
-    "sender": "Sender"
+    "sender": "Sender",
+    "not_found_title": "Page Not Found",
+    "not_found_description": "The page you are looking for may have been moved, deleted, or never existed.",
+    "back_to_home": "Back to Home"
 }

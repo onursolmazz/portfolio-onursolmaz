@@ -17,7 +17,7 @@ const experienceData = [
 
   {
     id: 2,
-    role: "experience_role_2",
+    role: "experience_role_1",
     company: "Kam İnovasyon",
     location: "Ankara, Türkiye",
     period: "experience_period_2",

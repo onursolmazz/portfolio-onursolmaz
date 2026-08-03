@@ -57,7 +57,7 @@ function Experience() {
                       <h3>{_(item.role)}</h3>
 
                       <span className="experience_company">
-                        {item.company} · (item.location)
+                        {item.company} · {item.location}
                       </span>
                     </div>
 

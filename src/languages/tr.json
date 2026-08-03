@@ -68,5 +68,7 @@
   "privacy_links_text": "GitHub, LinkedIn veya diğer harici bağlantılara tıkladığınızda ilgili web sitelerinin kendi gizlilik politikaları geçerlidir. Bu sitelerin içeriklerinden veya veri işleme yöntemlerinden sorumlu değilim.",
   "privacy_contact_me_title": "Sorular",
   "privacy_contact_me_text": "Bu gizlilik politikası hakkında herhangi bir sorunuz varsa iletişim formu veya e-posta adresim üzerinden benimle iletişime geçebilirsiniz.",
-  "back_to_home": "← Ana Sayfaya Dön"
+  "not_found_title": "Sayfa Bulunamadı",
+  "not_found_description": "Aradığınız sayfa taşınmış, silinmiş veya hiç var olmamış olabilir.",
+  "back_to_home": "Ana Sayfaya Dön"
 }
