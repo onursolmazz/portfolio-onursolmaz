@@ -1,6 +1,6 @@
 export const SITE_NAME = "Onur Solmaz";
 
-export const SITE_URL = "https://onursolmaz.dev";
+export const SITE_URL = "https://onursolmaz.com.tr";
 
 export const DEFAULT_TITLE = "Onur Solmaz | Software Engineer";
 
