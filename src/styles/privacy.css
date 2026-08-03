@@ -1,0 +1,88 @@
+/* ===========================
+        PRIVACY PAGE
+=========================== */
+
+.privacy {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 140px 20px 100px;
+}
+
+.privacy_back {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--primary);
+  font-weight: 600;
+  transition: .3s;
+  margin-bottom: 2rem;
+}
+
+.privacy_back:hover {
+  opacity: .8;
+}
+
+.privacy h1 {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  color: var(--text);
+  margin-bottom: .75rem;
+}
+
+.privacy_updated {
+  color: var(--text-secondary);
+  font-size: .95rem;
+  margin-bottom: 2.5rem;
+}
+
+.privacy p {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.privacy h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.45rem;
+  color: var(--text);
+  position: relative;
+  padding-left: 1rem;
+}
+
+.privacy h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .2rem;
+  width: 4px;
+  height: calc(100% - .4rem);
+  background: var(--primary);
+  border-radius: 20px;
+}
+
+.privacy section {
+  margin-bottom: 2rem;
+}
+
+.privacy a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.privacy a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .privacy {
+    padding: 120px 20px 80px;
+  }
+
+  .privacy h1 {
+    font-size: 2.2rem;
+  }
+
+  .privacy h2 {
+    font-size: 1.25rem;
+  }
+}

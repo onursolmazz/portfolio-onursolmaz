@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import projectsData from "../data/projectsData";
+import { _ } from "../languages/i18n";
 
 import {
   HiOutlineTicket,
@@ -18,23 +19,15 @@ const icons = [
   HiOutlineShoppingCart,
 ];
 
-const colors = [
-  "#f16a6a",
-  "#5b8def",
-  "#4fd18b",
-  "#f5c243",
-  "#b06ce8",
-];
+const colors = ["#f16a6a", "#5b8def", "#4fd18b", "#f5c243", "#b06ce8"];
 
 function Projects() {
   return (
     <section id="projects" className="projects">
       <div className="container projects_container">
-        <h2>My Projects</h2>
+        <h2>{_("projects")}</h2>
 
-        <p className="projects_subtitle">
-          A selection from my recent work.
-        </p>
+        <p className="projects_subtitle">{_("projects_subtitle")}</p>
 
         <div className="projects_grid">
           {projectsData.map((project, index) => {
@@ -54,7 +47,6 @@ function Projects() {
                 }}
               >
                 <div className="project_card_header">
-
                   <div
                     className="project_icon"
                     style={{
@@ -65,20 +57,15 @@ function Projects() {
                     <Icon />
                   </div>
 
-                  <h3>{project.title}</h3>
-
+                  <h3>{_(project.title)}</h3>
                 </div>
 
-
                 <p>
-                  {project.description}
+                  <p>{_(project.description)}</p>
                 </p>
 
-
                 <div className="project_card_footer">
-
                   <span className="project_tech">
-
                     <span
                       className="project_dot"
                       style={{
@@ -87,9 +74,7 @@ function Projects() {
                     />
 
                     {project.technologies.slice(0, 2).join(" · ")}
-
                   </span>
-
 
                   {project.github && (
                     <a
@@ -101,14 +86,11 @@ function Projects() {
                       GitHub ↗
                     </a>
                   )}
-
                 </div>
-
               </motion.div>
             );
           })}
         </div>
-
       </div>
     </section>
   );

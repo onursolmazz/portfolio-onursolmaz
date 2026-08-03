@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 import { TbBriefcase2 } from "react-icons/tb";
 import { TypeAnimation } from "react-type-animation";
+import { _ } from "../languages/i18n";
 
 function Hero() {
   return (
@@ -12,7 +13,7 @@ function Hero() {
           <span className="hero_badge">SOFTWARE ENGINEER</span>
 
           <h1>
-            Merhaba, ben
+            {_("hello")}
             <br />
             <span>Onur Solmaz.</span>
           </h1>
@@ -33,19 +34,18 @@ function Hero() {
           />
 
           <p>
-            React, Laravel ve modern web teknolojileri ile ölçeklenebilir,
-            performanslı ve kullanıcı odaklı web uygulamaları geliştiriyorum.
+            {_("hero_description")}
           </p>
 
           <div className="hero_buttons">
             <a href="#projects" className="btn btn-primary">
               <TbBriefcase2 />
-              Çalışmalarımı İncele
+              {_("view_projects")}
             </a>
 
             <a href="/cv.pdf" className="btn btn-secondary">
               <HiOutlineDownload />
-              CV İndir
+              {_("download_cv")}
             </a>
           </div>
 
@@ -65,7 +65,7 @@ function Hero() {
         </div>
 
         <div className="hero_preview">
-          <span className="preview_text">🚀 Son Çalışmalarım</span>
+          <span className="preview_text">{_("recent_work")}</span>
 
           <div className="preview_card">
             <div className="preview_icons">
@@ -73,19 +73,17 @@ function Hero() {
               <div className="icon">📚</div>
               <div className="icon">🛒</div>
               <div className="icon">📊</div>
-              <div className="icon">💬</div>
               <div className="icon">🤖</div>
             </div>
 
-            <h3>Öne Çıkan Projeler</h3>
+            <h3>{_("featured_projects")}</h3>
 
             <ul className="preview_list">
-              <li>🎟️ Vidipass Event Platform</li>
-              <li>📚 Library Management System</li>
-              <li>🛒 E-Commerce Web App</li>
-              <li>📊 Admin Dashboard</li>
-              <li>🤖 AI Assistant</li>
-              <li>💬 Real Time Chat App</li>
+              <li>🎟️ {_("project_vidipass")}</li>
+              <li>📚 {_("project_library")}</li>
+              <li>🛒 {_("project_ecommerce")}</li>
+              <li>📊 {_("project_dashboard")}</li>
+              <li>💬 {_("project_chat")}</li>
             </ul>
           </div>
         </div>

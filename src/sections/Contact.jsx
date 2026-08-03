@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { _ } from "../languages/i18n";
 
-const CONTACT_EMAIL = "contact@flowbytestudio.net"; // kendi mailinle değiştir
+const CONTACT_EMAIL = "contact@flowbytestudio.net";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -10,15 +11,21 @@ function Contact() {
   });
 
   const handleChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const subject = encodeURIComponent(`Portfolio mesajı — ${formData.name}`);
+    const subject = encodeURIComponent(
+      `${_("portfolio_message")} — ${formData.name}`,
+    );
+
     const body = encodeURIComponent(
-      `Gönderen: ${formData.name} (${formData.email})\n\n${formData.message}`,
+      `${_("sender")}: ${formData.name} (${formData.email})\n\n${formData.message}`,
     );
 
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
@@ -27,18 +34,18 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container contact_container">
-        <h2>Contact Me</h2>
+        <h2>{_("contact_title")}</h2>
 
         <p className="contact_description">
-          Contact me directly via email or through this form.
+          {_("contact_description")}
         </p>
-        
+
         <form className="contact_form" onSubmit={handleSubmit}>
           <div className="contact_row">
             <input
               type="text"
               name="name"
-              placeholder="Your name"
+              placeholder={_("your_name")}
               value={formData.name}
               onChange={handleChange}
               required
@@ -47,7 +54,7 @@ function Contact() {
             <input
               type="email"
               name="email"
-              placeholder="Your email"
+              placeholder={_("your_email")}
               value={formData.email}
               onChange={handleChange}
               required
@@ -56,7 +63,7 @@ function Contact() {
 
           <textarea
             name="message"
-            placeholder="Your message..."
+            placeholder={_("your_message")}
             rows={7}
             value={formData.message}
             onChange={handleChange}
@@ -64,7 +71,7 @@ function Contact() {
           />
 
           <button type="submit" className="contact_submit">
-            Send message
+            {_("send_message")}
           </button>
         </form>
       </div>

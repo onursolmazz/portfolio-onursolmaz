@@ -1,9 +1,8 @@
 const projectsData = [
   {
     id: 1,
-    title: "Vidipass Web Platform",
-    description:
-      "Etkinlik yönetimi ve bilet satış süreçleri için geliştirilen web platformu. React frontend ve Laravel backend kullanılarak API entegrasyonları, kullanıcı işlemleri ve dinamik içerik yönetimi geliştirildi.",
+    title: "project_vidipass_title",
+    description: "project_vidipass_description",
     image: "/images/vidipass.png",
     technologies: [
       "React",
@@ -17,12 +16,10 @@ const projectsData = [
     github: "",
     demo: "",
   },
-
   {
     id: 2,
-    title: "Library Management System",
-    description:
-      "Kitap, kullanıcı ve ödünç alma işlemlerinin yönetildiği modern kütüphane yönetim sistemi.",
+    title: "project_library_title",
+    description: "project_library_description",
     image: "/images/library.png",
     technologies: [
       "React",
@@ -34,12 +31,10 @@ const projectsData = [
     github: "https://github.com/onursolmaz/library-management",
     demo: "",
   },
-
   {
     id: 3,
-    title: "Task Management Application",
-    description:
-      "Kullanıcıların görev oluşturabildiği, güncelleyebildiği ve takip edebildiği görev yönetim uygulaması.",
+    title: "project_task_title",
+    description: "project_task_description",
     image: "/images/task-manager.png",
     technologies: [
       "React",
@@ -51,12 +46,10 @@ const projectsData = [
     github: "https://github.com/onursolmaz/task-management",
     demo: "",
   },
-
   {
     id: 4,
-    title: "Real Time Chat Application",
-    description:
-      "WebSocket teknolojisi kullanılarak geliştirilen gerçek zamanlı mesajlaşma uygulaması.",
+    title: "project_chat_title",
+    description: "project_chat_description",
     image: "/images/chat.png",
     technologies: [
       "React",
@@ -68,12 +61,10 @@ const projectsData = [
     github: "https://github.com/onursolmaz/chat-app",
     demo: "",
   },
-
   {
     id: 5,
-    title: "E-Commerce Application",
-    description:
-      "Ürün listeleme, sepet yönetimi, kullanıcı doğrulama ve sipariş süreçlerini içeren e-ticaret uygulaması.",
+    title: "project_ecommerce_title",
+    description: "project_ecommerce_description",
     image: "/images/ecommerce.png",
     technologies: [
       "Next.js",

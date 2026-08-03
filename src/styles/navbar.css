@@ -105,7 +105,13 @@
 .theme_toggle:hover {
   color: var(--primary);
 }
+.navbar_menu a.active {
+  color: var(--text);
+}
 
+.navbar_menu a.active::after {
+  width: 100%;
+}
 
 @media (max-width: 992px) {
 

@@ -1,27 +1,59 @@
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import { _ } from "../languages/i18n";
 
 const menuItems = [
-  { id: "hero", label: "Ana Sayfa" },
-  { id: "about", label: "Hakkımda" },
-  { id: "skills", label: "Yetenekler" },
-  { id: "projects", label: "Projeler" },
-  { id: "experience", label: "Deneyim" },
-  { id: "contact", label: "İletişim" },
+  { id: "hero", label: "home" },
+  { id: "about", label: "about" },
+  { id: "skills", label: "skills" },
+  { id: "projects", label: "projects" },
+  { id: "experience", label: "experience" },
+  { id: "contact", label: "contact" },
 ];
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
+
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-40% 0px -40% 0px",
+      },
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
     };
   }, []);
 
@@ -35,8 +67,14 @@ function Navbar() {
         <ul className={`navbar_menu ${menuOpen ? "active" : ""}`}>
           {menuItems.map((item) => (
             <li key={item.id}>
-              <a href={`#${item.id}`} onClick={() => setMenuOpen(false)}>
-                {item.label}
+              <a
+                href={`#${item.id}`}
+                className={activeSection === item.id ? "active" : ""}
+                onClick={() => {
+                  setMenuOpen(false);
+                }}
+              >
+                {_(item.label)}
               </a>
             </li>
           ))}
@@ -47,7 +85,9 @@ function Navbar() {
 
           <button
             className="menu_button"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
           >
             {menuOpen ? <HiX /> : <HiOutlineMenuAlt3 />}
           </button>

@@ -1,31 +1,34 @@
 const aboutData = {
-  badge: "BEN KİMİM",
-  title: "Hakkımda",
+  badge: "about_badge",
+  title: "about",
+
   description: [
-    "Merhaba! Ben Onur Solmaz. Yeni mezun bir Bilgisayar Mühendisi olarak modern web teknolojileriyle kullanıcı odaklı uygulamalar geliştiriyorum.",
-    "React, Laravel, PHP ve MySQL ile frontend ve backend geliştirme süreçlerinde çalışıyorum.",
-    "Sürekli öğrenmeyi ve kendimi geliştirmeyi hedefliyorum.",
+    "about_description_1",
+    "about_description_2",
+    "about_description_3",
   ],
-  quote: "Sürekli öğreniyor, sürekli geliştiriyorum. 🚀",
+
+  quote: "about_quote",
+
   cards: [
     {
       id: 1,
-      title: "Frontend",
+      title: "frontend",
       items: ["React", "JavaScript", "TypeScript", "Bootstrap"],
     },
     {
       id: 2,
-      title: "Backend",
+      title: "backend",
       items: ["Laravel", "PHP", "REST API", "MySQL"],
     },
     {
       id: 3,
-      title: "Araçlar",
+      title: "tools",
       items: ["Git", "Docker", "VS Code", "Postman"],
     },
     {
       id: 4,
-      title: "Öğreniyorum",
+      title: "learning",
       items: ["Node.js", "Express.js", "Redis", "CI/CD"],
     },
   ],

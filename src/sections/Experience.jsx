@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import experienceData from "../data/experienceData";
+import { _ } from "../languages/i18n";
 
 const colors = ["#5b8def", "#e0596b", "#4fd18b", "#f5c243", "#b06ce8"];
 
@@ -17,7 +18,7 @@ function Experience() {
   return (
     <section id="experience" className="experience">
       <div className="container experience_container">
-        <h2>Work Experience</h2>
+        <h2>{_("experience_title")}</h2>
 
         <div className="experience_timeline">
           {experienceData.map((item, index) => {
@@ -30,7 +31,10 @@ function Experience() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.1,
+                }}
               >
                 <span
                   className="experience_dot"
@@ -50,16 +54,19 @@ function Experience() {
                     </div>
 
                     <div className="experience_heading">
-                      <h3>{item.role}</h3>
+                      <h3>{_(item.role)}</h3>
+
                       <span className="experience_company">
-                        {item.company} · {item.location}
+                        {item.company} · (item.location)
                       </span>
                     </div>
 
-                    <span className="experience_date">{item.period}</span>
+                    <span className="experience_date">
+                      {_(item.period)}
+                    </span>
                   </div>
 
-                  <p>{item.description}</p>
+                  <p>{_(item.description)}</p>
 
                   <div className="experience_tags">
                     {item.technologies.map((tech) => (
