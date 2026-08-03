@@ -1,0 +1,133 @@
+.contact{
+    padding:50px 0;
+}
+
+.contact_container{
+    max-width:760px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.contact_container h2{
+    font-size:2.2rem;
+    margin-bottom:40px;
+}
+
+.contact_form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    text-align:left;
+}
+
+.contact_row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.contact_form input,
+.contact_form textarea{
+    width:100%;
+    padding:16px 18px;
+
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:10px;
+
+    background:transparent;
+    color:var(--text);
+
+    font-family:inherit;
+    font-size:1rem;
+
+    resize:vertical;
+    transition:border-color .3s;
+}
+
+.contact_form input::placeholder,
+.contact_form textarea::placeholder{
+    color:#7a7a7a;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus{
+    outline:none;
+    border-color:#f5c243;
+}
+
+.contact_form textarea{
+    min-height:180px;
+}
+
+.contact_submit{
+    align-self:center;
+    margin-top:10px;
+
+    padding:16px 40px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#f5c243;
+    color:#1a1a1a;
+
+    font-weight:700;
+    font-size:1rem;
+    cursor:pointer;
+
+    box-shadow:4px 4px 0 rgba(0,0,0,.5);
+    transition:transform .2s, box-shadow .2s;
+}
+
+.contact_submit:hover{
+    transform:translate(-2px,-2px);
+    box-shadow:6px 6px 0 rgba(0,0,0,.5);
+}
+
+.contact_submit:active{
+    transform:translate(0,0);
+    box-shadow:2px 2px 0 rgba(0,0,0,.5);
+}
+
+.contact_direct{
+    margin-top:32px;
+    color:#9a9a9a;
+    font-style:italic;
+}
+
+.contact_direct a{
+    color:#f5c243;
+    font-weight:600;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+  .contact{
+    padding:80px 0;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .contact_row{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media (max-width:576px){
+
+  .contact_container h2{
+    font-size:1.8rem;
+  }
+
+  .contact_submit{
+    width:100%;
+  }
+
+}
