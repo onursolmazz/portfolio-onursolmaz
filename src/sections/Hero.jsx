@@ -161,7 +161,6 @@ function Hero() {
                       <p>{project.name}</p>
                     </div>
 
-                    <FaArrowRight className="workspace_project_arrow" />
                   </div>
                 ))}
               </div>
