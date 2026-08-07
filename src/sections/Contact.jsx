@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { _ } from "../languages/i18n";
 
-const CONTACT_EMAIL = "contact@flowbytestudio.net";
+const CONTACT_EMAIL = "onursolmazzz2003@gmail.com";
 
 function Contact() {
   const [formData, setFormData] = useState({

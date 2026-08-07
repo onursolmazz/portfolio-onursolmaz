@@ -2,142 +2,201 @@ import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
-  FaArrowDown,
+  FaArrowRight,
   FaTicketAlt,
   FaBook,
   FaShoppingCart,
   FaChartBar,
   FaRobot,
 } from "react-icons/fa";
-import { TbBriefcase2 } from "react-icons/tb";
+
+import { TbBriefcase2, TbWorld } from "react-icons/tb";
 import { TypeAnimation } from "react-type-animation";
 import { _ } from "../languages/i18n";
 
 function Hero() {
+  const projects = [
+    {
+      icon: <FaTicketAlt />,
+      name: _("project_vidipass"),
+      className: "blue",
+    },
+    {
+      icon: <FaBook />,
+      name: _("project_library"),
+      className: "purple",
+    },
+    {
+      icon: <FaShoppingCart />,
+      name: _("project_ecommerce"),
+      className: "yellow",
+    },
+    {
+      icon: <FaChartBar />,
+      name: _("project_dashboard"),
+      className: "cyan",
+    },
+    {
+      icon: <FaRobot />,
+      name: _("project_chat"),
+      className: "pink",
+    },
+  ];
+
   return (
-    <section id="hero" className="hero">
-      <div className="hero_container container">
+    <section className="hero" id="hero">
+      <div className="container hero_container">
         <div className="hero_content">
-          <span className="hero_badge">SOFTWARE ENGINEER</span>
-
-          <h1>
-            {_("hello")}
-            <br />
-            <span>Onur Solmaz.</span>
-          </h1>
-
-          <TypeAnimation
-            sequence={[
-              "Software Engineer",
-              2000,
-              "React Developer",
-              2000,
-              "FullStack Developer",
-              2000,
-            ]}
-            wrapper="h2"
-            repeat={Infinity}
-          />
-
-          <p>{_("hero_description")}</p>
-
-          <div className="hero_buttons">
-            <a href="#projects" className="btn btn-primary">
-              <TbBriefcase2 />
-              {_("view_projects")}
-            </a>
-
-            {/* <a href="/cv.pdf" className="btn btn-secondary">
-              <HiOutlineDownload />
-              {_("download_cv")}
-            </a> */}
+          <div className="hero_badge">
+            <span className="hero_badge_dot" />
+            SOFTWARE ENGINEER
           </div>
 
-          <div className="hero_socials">
-            <a
-              href="https://github.com/onursolmazz"
-              aria-label="Github profile"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub />
-            </a>
+          <h1>
+            <span className="hero_hello">{_("hello")}</span>
 
-            <a
-              href="https://www.linkedin.com/in/onur-solmaz-907971243/"
-              target="_blank"
-              aria-label="Linkedin profile"
-              rel="noreferrer"
-            >
-              <FaLinkedin />
-            </a>
+            <span className="hero_name">
+              Onur
+              <br />
+              Solmaz<span className="hero_dot">.</span>
+            </span>
+          </h1>
 
-            <a href="mailto:onursolmazzz2003@mail.com" aria-label="Mail">
-              <FaEnvelope />
+          <div className="hero_role">
+            <span className="hero_role_symbol">&gt;</span>
+
+            <TypeAnimation
+              sequence={[
+                "Software Engineer",
+                2000,
+                "React Developer",
+                2000,
+                "Full-Stack Developer",
+                2000,
+              ]}
+              wrapper="span"
+              repeat={Infinity}
+            />
+          </div>
+
+          <p className="hero_description">{_("hero_description")}</p>
+
+          <div className="hero_buttons">
+            <a href="#projects" className="hero_primary_button">
+              <TbBriefcase2 />
+              {_("view_projects")}
+              <FaArrowRight />
             </a>
+          </div>
+
+          <div className="hero_bottom">
+            <span className="hero_social_line" />
+
+            <div className="hero_socials">
+              <a
+                href="https://github.com/onursolmazz"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Github profile"
+              >
+                <FaGithub />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/onur-solmaz-907971243/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Linkedin profile"
+              >
+                <FaLinkedin />
+              </a>
+
+              <a href="mailto:onursolmazzz2003@mail.com" aria-label="Mail">
+                <FaEnvelope />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="hero_preview">
-          <span className="preview_text">{_("recent_work")}</span>
+        <div className="hero_visual">
+          <div className="workspace_glow workspace_glow_one" />
+          <div className="workspace_glow workspace_glow_two" />
 
-          <div className="preview_card">
-            <div className="preview_icons">
-              <div className="icon">
-                <FaTicketAlt />
+          <div className="workspace">
+            <div className="workspace_header">
+              <div className="workspace_window_buttons">
+                <span />
+                <span />
+                <span />
               </div>
 
-              <div className="icon">
-                <FaBook />
-              </div>
+              <div className="workspace_title">onur.solmaz / portfolio</div>
 
-              <div className="icon">
-                <FaShoppingCart />
-              </div>
-
-              <div className="icon">
-                <FaChartBar />
-              </div>
-
-              <div className="icon">
-                <FaRobot />
+              <div className="workspace_status">
+                <span />
+                Online
               </div>
             </div>
 
-            <h3>{_("featured_projects")}</h3>
+            <div className="workspace_content">
+              <div className="workspace_intro">
+                <div>
+                  <span className="workspace_label">{_("recent_work")}</span>
 
-            <ul className="preview_list">
-              <li>
-                <FaTicketAlt />
-                {_("project_vidipass")}
-              </li>
+                  <h3>{_("featured_projects")}</h3>
+                </div>
+              </div>
 
-              <li>
-                <FaBook />
-                {_("project_library")}
-              </li>
+              <div className="workspace_projects">
+                {projects.map((project, index) => (
+                  <div
+                    className={`workspace_project ${project.className}`}
+                    key={index}
+                  >
+                    <div className="hero_project_icon">{project.icon}</div>
 
-              <li>
-                <FaShoppingCart />
-                {_("project_ecommerce")}
-              </li>
+                    <div className="workspace_project_content">
+                      <span>0{index + 1}</span>
 
-              <li>
-                <FaChartBar />
-                {_("project_dashboard")}
-              </li>
+                      <p>{project.name}</p>
+                    </div>
 
-              <li>
-                <FaRobot />
-                {_("project_chat")}
-              </li>
-            </ul>
+                    <FaArrowRight className="workspace_project_arrow" />
+                  </div>
+                ))}
+              </div>
+
+              <div className="workspace_footer">
+                <div className="workspace_info">
+                  <div>
+                    <span>Development</span>
+                    <strong>Full-Stack</strong>
+                  </div>
+                </div>
+
+                <div className="workspace_info">
+                  <div className="workspace_info_icon">
+                    <TbWorld />
+                  </div>
+
+                  <div>
+                    <span>Focus</span>
+                    <strong>Web Applications</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="workspace_bottom_bar">
+              <span>
+                <span className="workspace_bottom_dot" />
+                portfolio.tsx
+              </span>
+
+              <span>UTF-8</span>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className="scroll_down">
-        <FaArrowDown />
       </div>
     </section>
   );

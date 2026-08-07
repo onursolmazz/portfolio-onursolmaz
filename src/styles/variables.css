@@ -1,68 +1,94 @@
 :root,
 [data-theme="dark"] {
-  --primary: #8b5cf6;
-  --primary-hover: #7c3aed;
+  --primary: #6f8cff;
+  --primary-hover: #5b75f6;
 
-  --background: #0b0b0d;
-  --surface: #151519;
-  --surface-hover: #1d1d23;
+  --background: #070b14;
+  --surface: #101624;
+  --surface-hover: #171f30;
+
+  --page-glow-primary: rgba(53, 110, 255, 0.18);
+  --page-glow-secondary: rgba(0, 174, 255, 0.1);
+  --page-glow-tertiary: rgba(110, 72, 255, 0.09);
+  --page-glow-extra: rgba(76, 29, 149, 0.07);
+
+  --network-line: rgba(86, 140, 255, 0.055);
+  --network-line-secondary: rgba(0, 180, 255, 0.035);
+  --network-dot: rgba(86, 165, 255, 0.55);
 
   --text: #ffffff;
-  --text-secondary: #b4b4b8;
+  --text-secondary: #aab4c8;
 
-  --border: #2b2b33;
+  --border: #242d40;
   --border-light: rgba(255, 255, 255, 0.08);
 
   --success: #22c55e;
   --warning: #f59e0b;
   --danger: #ef4444;
 
-  --card: #151519;
-  --card-hover: #1d1d23;
-  --icon-bg: #202020;
-  --icon-hover: #2b2b2b;
+  --card: rgba(15, 21, 34, 0.9);
+  --card-hover: rgba(21, 29, 46, 0.94);
 
-  --navbar: rgba(11, 11, 13, 0.85);
+  --icon-bg: rgba(255, 255, 255, 0.05);
+  --icon-hover: rgba(74, 132, 255, 0.12);
+
+  --navbar: rgba(7, 11, 20, 0.84);
 
   --accent: #f5c243;
   --accent-bg: rgba(245, 194, 67, 0.08);
-  --accent-border: rgba(245, 194, 67, 0.45);
-  --card-border: rgba(255, 255, 255, 0.25);
-  --shadow: rgba(0, 0, 0, 0.45);
+  --accent-border: rgba(245, 194, 67, 0.42);
+
+  --card-border: rgba(255, 255, 255, 0.12);
+
+  --shadow: rgba(0, 0, 0, 0.5);
   --accent-shadow: rgba(245, 194, 67, 0.18);
+
   --transition: 0.3s ease;
 }
 
 [data-theme="light"] {
-  --primary: #7c3aed;
-  --primary-hover: #6d28d9;
+  --primary: #4f67d9;
+  --primary-hover: #4058ca;
 
-  --background: #f8fafc;
-  --surface: #ffffff;
-  --surface-hover: #f1f5f9;
+  --background: #f4f7ff;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-hover: #edf2ff;
 
-  --text: #111827;
-  --text-secondary: #6b7280;
+  --page-glow-primary: rgba(75, 118, 255, 0.13);
+  --page-glow-secondary: rgba(0, 168, 225, 0.08);
+  --page-glow-tertiary: rgba(117, 83, 255, 0.07);
+  --page-glow-extra: rgba(236, 72, 153, 0.045);
 
-  --border: #e5e7eb;
-  --border-light: rgba(0, 0, 0, 0.08);
+  --network-line: rgba(66, 105, 190, 0.055);
+  --network-line-secondary: rgba(0, 140, 200, 0.035);
+  --network-dot: rgba(62, 112, 220, 0.32);
+
+  --text: #151b2b;
+  --text-secondary: #68738a;
+
+  --border: #dce3f2;
+  --border-light: rgba(25, 40, 80, 0.08);
 
   --success: #16a34a;
   --warning: #d97706;
   --danger: #dc2626;
 
-  --card: #ffffff;
-  --card-hover: #f8fafc;
-  --icon-bg: #f3f4f6;
-  --icon-hover: #e5e7eb;
+  --card: rgba(255, 255, 255, 0.82);
+  --card-hover: rgba(255, 255, 255, 0.96);
 
-  --navbar: rgba(255, 255, 255, 0.85);
+  --icon-bg: rgba(75, 118, 255, 0.07);
+  --icon-hover: rgba(75, 118, 255, 0.14);
 
-  --accent: #d97706;
-  --accent-bg: rgba(217, 119, 6, 0.08);
-  --accent-border: rgba(217, 119, 6, 0.35);
-  --card-border: rgba(0, 0, 0, 0.15);
-  --shadow: rgba(0, 0, 0, 0.08);
-  --accent-shadow: rgba(217, 119, 6, 0.15);
+  --navbar: rgba(244, 247, 255, 0.82);
+
+  --accent: #c98308;
+  --accent-bg: rgba(201, 131, 8, 0.08);
+  --accent-border: rgba(201, 131, 8, 0.32);
+
+  --card-border: rgba(35, 55, 100, 0.12);
+
+  --shadow: rgba(30, 50, 100, 0.09);
+  --accent-shadow: rgba(201, 131, 8, 0.13);
+
   --transition: 0.3s ease;
 }
